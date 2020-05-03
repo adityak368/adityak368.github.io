@@ -111,7 +111,6 @@ class App extends React.Component {
     return (
       React.createElement("div", { className: "app" },
       React.createElement("header", { className: "header" },
-      React.createElement(ColoredLine, { color: "black", height: 1.5 }),
       React.createElement("div", { id: "logoContainer" },
       React.createElement("div", { id: "quoteOfTheDay" },
       React.createElement("h5", null, "\"You can do anything you set your mind to\" - Eminem")),
@@ -210,7 +209,7 @@ class App extends React.Component {
       React.createElement("li", null, "Hardworking and dedicated individual who is open to learning and can get stuff done."),
       React.createElement("li", null, "A partner in crime to travel, play badminton/volleyball watch MMA or go to an Eminem concert.")),
 
-      React.createElement("a", { href: "#" }, "Download Resume"),
+      React.createElement("a", { href: "https://drive.google.com/file/d/1WShF4O0WRgwbJscGDZzDiXT_7X5W7sIY/view?usp=drivesdk" }, "Download Resume"),
       React.createElement("h6", null, "Have a look at his works @ ", React.createElement("a", { href: "https://github.com/adityak368" }, "Github"), " and ", React.createElement("a", { href: "https://play.google.com/store/apps/developer?id=Aditya+K&hl=en_IN" }, "Google Play")))),
 
 
