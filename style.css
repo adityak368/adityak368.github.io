@@ -104,6 +104,7 @@ img {
 .app #resumeDetails {
   border: 1px solid black;
   padding: 10px;
+  margin-bottom: 20px;
 }
 .app #additionalNews {
   display: flex;

@@ -163,8 +163,8 @@ class App extends React.Component {
       React.createElement("h3", { className: "heading" }, "ADVERTISEMENTS"),
       React.createElement("div", { style: { padding: '5px' } },
       React.createElement("h3", null, "Meet Aditya!"),
-      React.createElement("p", null, "Aditya loves to code and build complex softwares. He has worked in software development for 6+ years. He does not limit himself to any particular domain/component/tech stack and considers himself a ", React.createElement("strong", null, "generalist and language agnostic"), ". He does whatever it takes to get the job done."),
-      React.createElement("p", null, "He also likes to solve algorithmic problems. He likes to optimize the code he writes and also come up with good designs. He also considers himself a ", React.createElement("strong", null, "full stack developer"), " as he has developed applications for mobile/desktop/web and has good idea about the complete ecosystem."),
+      React.createElement("p", null, "Aditya loves to code and build complex software. He has worked in software development for 6+ years. He does not limit himself to any particular domain/component/tech stack and considers himself a ", React.createElement("strong", null, "generalist and language agnostic"), ". He does whatever it takes to get the job done."),
+      React.createElement("p", null, "He also likes to solve algorithmic problems. He likes to optimize the code he writes and also come up with good designs. He considers himself a ", React.createElement("strong", null, "full stack developer"), " as he has developed applications for mobile/desktop/web and has good idea about the complete ecosystem."),
       React.createElement("h4", null, "Thats all good, but where has he worked till now? and what has he done?"),
       React.createElement("ul", { className: "nobullets" },
       React.createElement("li", null,
@@ -209,14 +209,23 @@ class App extends React.Component {
       React.createElement("li", null, "Hardworking and dedicated individual who is open to learning and can get stuff done."),
       React.createElement("li", null, "A partner in crime to travel, play badminton/volleyball watch MMA or go to an Eminem concert.")),
 
-      React.createElement("a", { href: "https://drive.google.com/file/d/1WShF4O0WRgwbJscGDZzDiXT_7X5W7sIY/view?usp=drivesdk" }, "Download Resume"),
+      React.createElement("a", { href: "https://drive.google.com/file/d/1yqwMmocZlSropn5ZaomSdwcGSIJaZVBm/view" }, "Download Resume"),
       React.createElement("h6", null, "Have a look at his works @ ", React.createElement("a", { href: "https://github.com/adityak368" }, "Github"), " and ", React.createElement("a", { href: "https://play.google.com/store/apps/developer?id=Aditya+K&hl=en_IN" }, "Google Play")))),
+
+
+
+      isLoading ? React.createElement(Loader, null) :
+      isNewsFetchError || !articles ?
+      React.createElement(Message, { title: "Oops, something went wrong", description: "I could not get the latest breaking news!. But fear not as i am hard at working looking into what just happenned!" }) :
 
 
       React.createElement("div", { id: "additionalNews" },
       React.createElement(NewsDisplay, { article: this.getRandomArticle() }),
       React.createElement(NewsDisplay, { article: this.getRandomArticle() }),
       React.createElement(NewsDisplay, { article: this.getRandomArticle() })),
+
+
+
 
       React.createElement("footer", { className: "footer" }, "Powered by NewsAPI.org")));
 
