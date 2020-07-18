@@ -77,7 +77,6 @@ img {
   justify-content: space-around;
 }
 .app .box {
-  width: 400px;
   padding: 10px;
 }
 .app .box.dark-mode {

@@ -48,9 +48,9 @@ description));
 const NewsDisplay = ({ article }) =>
 React.createElement("div", { className: "newsDisplay" },
 React.createElement("h1", { className: "newsDisplayTitle" }, article.title),
-React.createElement("p", { className: "newsDisplayAuthor" }, article.author, " ", article.publishedAt),
-React.createElement("img", { src: article.urlToImage }),
-React.createElement("p", { className: "newsDisplayDescription" }, article.content || article.description || ''),
+React.createElement("p", { className: "newsDisplayAuthor" }, article.byline || '', " ", article.published_date),
+React.createElement("img", { src: (article === null || article === void 0 ? void 0 : article.multimedia) && article.multimedia.length > 0 && article.multimedia[0].type === "image" ? article.multimedia[0].url : '' }),
+React.createElement("p", { className: "newsDisplayDescription" }, article.abstract || ''),
 React.createElement("a", { href: article.url }, "Read More"));
 
 
@@ -100,11 +100,11 @@ class App extends React.Component {
 
 
     () => {
-      const url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=66c8ae8cd47c4a3c88dce760cf7ca06e';
+      const url = 'https://api.nytimes.com/svc/topstories/v2/world.json?api-key=1DXptGlOlyf3XOLM5EI0DRM9h19KLWLS';
       const req = new Request(url);
       return fetch(req).
       then(response => response.json());
-    });this.resumeRef = React.createRef();}getRandomArticle() {const { articles } = this.state;if (!articles) {return {};}const min = 0;const max = articles.length - 1;const index = Math.floor(Math.random() * (max - min)) + min;return articles[index];}componentDidMount() {setTimeout(async () => {const news = await this.fetchNews();if (news.status === "ok" && Array.isArray(news.articles)) {this.setState({ isLoading: false, articles: news.articles });} else {this.setState({ isLoading: false, isNewsFetchError: true });}}, 1000);}
+    });this.resumeRef = React.createRef();}getRandomArticle() {const { articles } = this.state;if (!articles) {return {};}const min = 0;const max = articles.length - 1;const index = Math.floor(Math.random() * (max - min)) + min;return articles[index];}componentDidMount() {setTimeout(async () => {const news = await this.fetchNews();if (news.status === "OK" && Array.isArray(news.results)) {this.setState({ isLoading: false, articles: news.results });} else {this.setState({ isLoading: false, isNewsFetchError: true });}}, 1000);}
 
   render() {
     const { isLoading, isNewsFetchError, articles } = this.state;
@@ -150,7 +150,7 @@ class App extends React.Component {
 
       isLoading ? React.createElement(Loader, null) :
       isNewsFetchError || !articles ?
-      React.createElement(Message, { title: "Oops, something went wrong", description: "I could not get the latest breaking news!. But fear not as i am hard at working looking into what just happenned!" }) :
+      React.createElement(Message, { title: "Oops, something went wrong", description: "I could not get the latest breaking news!. But fear not as i am hard at work looking into what just happenned!" }) :
 
 
       React.createElement(NewsDisplay, { article: this.getRandomArticle() }))),
@@ -216,7 +216,7 @@ class App extends React.Component {
 
       isLoading ? React.createElement(Loader, null) :
       isNewsFetchError || !articles ?
-      React.createElement(Message, { title: "Oops, something went wrong", description: "I could not get the latest breaking news!. But fear not as i am hard at working looking into what just happenned!" }) :
+      React.createElement(Message, { title: "Oops, something went wrong", description: "I could not get the latest breaking news!. But fear not as i am hard at work looking into what just happenned!" }) :
 
 
       React.createElement("div", { id: "additionalNews" },
