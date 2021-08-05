@@ -204,7 +204,7 @@ class App extends React.Component {
 
       React.createElement("h4", null, "Cool. But the position needs a speciality and i do not know if he has any experience with our stack."), /*#__PURE__*/
       React.createElement("p", null, "Aditya is comfortable with ", /*#__PURE__*/
-      React.createElement("strong", null, "C++/Qt, Java, React/Typescript/Nodejs and Go"), ". His C++/Qt experience comes from all the three companies he has worked in whereas React/Typescript/Nodejs comes from TeamViewer (This site is written in React). Java by his Android App Development in Tektronix and on a personal level (10 apps in Google Play store) and Go from personal projects."), /*#__PURE__*/
+      React.createElement("strong", null, "C++/Qt, Java, React/Typescript/Nodejs and Go"), ". His C++/Qt experience comes from all the three companies he has worked in whereas React/Typescript/Nodejs comes from TeamViewer (This site is written in React). Java from Scalable and by his Android App Development in Tektronix and on a personal level (10 apps in Google Play store) and Go from personal projects."), /*#__PURE__*/
 
 
       React.createElement("p", null, "He is also familiar with the most popular IDEs, CI/CD and agile processes. He follows Scrum for his day to day activities."), /*#__PURE__*/
@@ -218,8 +218,8 @@ class App extends React.Component {
       React.createElement("li", null, "Hardworking and dedicated individual who is open to learning and can get stuff done."), /*#__PURE__*/
       React.createElement("li", null, "A partner in crime to travel, play badminton/volleyball watch MMA or go to an Eminem concert.")), /*#__PURE__*/
 
-      React.createElement("a", { href: "https://drive.google.com/file/d/1yqwMmocZlSropn5ZaomSdwcGSIJaZVBm/view" }, "Download Resume"), /*#__PURE__*/
-      React.createElement("h6", null, "Have a look at his works @ ", /*#__PURE__*/React.createElement("a", { href: "https://github.com/adityak368" }, "Github"), " and ", /*#__PURE__*/React.createElement("a", { href: "https://play.google.com/store/apps/developer?id=Aditya+K&hl=en_IN" }, "Google Play")))),
+      React.createElement("a", { href: "https://drive.google.com/file/d/1dA76X6GVjZErgk16ejL0zuMpV236PgUA/view" }, "Download Resume"), /*#__PURE__*/
+      React.createElement("h4", null, "Have a look at his works @ ", /*#__PURE__*/React.createElement("a", { href: "https://github.com/adityak368" }, "Github"), " and ", /*#__PURE__*/React.createElement("a", { href: "https://play.google.com/store/apps/developer?id=Aditya+K&hl=en_IN" }, "Google Play")))),
 
 
 
