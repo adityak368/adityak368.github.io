@@ -169,15 +169,6 @@ class App extends React.Component {
       React.createElement("ul", { className: "nobullets" }, /*#__PURE__*/
       React.createElement("li", null, /*#__PURE__*/
       React.createElement(Card, {
-        title: 'Software Engineer @ Scalable Capital',
-        subtitle: 'July 2021 - Present',
-        imgUrl: 'https://onlinebanken.com/wp-content/uploads/2020/08/scalable-capital-logo.png',
-        linkUrl: 'https://de.scalable.capital/',
-        description: /*#__PURE__*/
-        React.createElement("p", null, "Currently he designs and develops features for the Wealth offerings of Scalable Capital. He mainly works on web portal built with React/Typescript/GraphQL/NextJs and Java/Kotlin.") }), /*#__PURE__*/
-
-
-      React.createElement(Card, {
         title: 'Senior Software Engineer @ TeamViewer',
         subtitle: 'May 2018 - June 2021',
         imgUrl: 'https://static.teamviewer.com/resources/2019/07/TeamViewer_Logo_512x512.png',
