@@ -100,7 +100,7 @@ class App extends React.Component {
 
 
     () => {
-      return fetch('https://api.nytimes.com/svc/topstories/v2/world.json?api-key=j6USnlP2AAWJOHhCvH6e0F30PJBcltG6').
+      return fetch('https://api.nytimes.com/svc/topstories/v2/world.json?api-key=AveU3aK0ngfyEOUvQDmg8XYoBgQDNdvH').
       then(response => response.json());
     });this.resumeRef = React.createRef();}getRandomArticle() {const { articles } = this.state;if (!articles) {return {};}const min = 0;const max = articles.length - 1;const index = Math.floor(Math.random() * (max - min)) + min;return articles[index];}componentDidMount() {setTimeout(async () => {const news = await this.fetchNews();if (news.status === "OK" && Array.isArray(news.results)) {this.setState({ isLoading: false, articles: news.results });} else {this.setState({ isLoading: false, isNewsFetchError: true });}}, 1000);}
 
