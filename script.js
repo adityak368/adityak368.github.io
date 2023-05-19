@@ -113,7 +113,7 @@ class App extends React.Component {
       React.createElement("div", { id: "quoteOfTheDay" }, /*#__PURE__*/
       React.createElement("h5", null, "\"You can do anything you set your mind to\" - Eminem")), /*#__PURE__*/
 
-      React.createElement("img", { className: "logo", src: "https://pngimage.net/wp-content/uploads/2018/06/the-new-york-times-logo-png-3.png" })), /*#__PURE__*/
+      React.createElement("img", { className: "logo", src: "https://howlround.com/sites/default/files/2018-11/nyt.png" })), /*#__PURE__*/
 
       React.createElement(ColoredLine, { color: "black", height: 0.5 }), /*#__PURE__*/
       React.createElement("div", { className: "headerInfo" }, /*#__PURE__*/
@@ -178,7 +178,7 @@ class App extends React.Component {
 
 
       React.createElement(Card, {
-        title: 'Lead Software Engineer @ Smart Recruiters',
+        title: 'Senior/Lead Software Engineer @ Smart Recruiters',
         subtitle: 'Sep 2021 - May 2022',
         imgUrl: 'https://www.firstbird.com/wp-content/uploads/2019/09/smartrecruiters.png',
         linkUrl: 'https://www.smartrecruiters.com',
